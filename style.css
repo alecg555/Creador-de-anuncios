@@ -1,0 +1,57 @@
+body{
+	
+}
+h1{
+	font-family: 'Luckiest Guy', cursive;
+}
+p{
+	font-family: 'Fredoka One', cursive;
+		font-size: 2em;
+}
+.title{
+   
+	text-align: center;
+	-webkit-animation: title 5s ;
+	
+	   
+}
+
+
+.parrafos{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	border-radius: 5px; 
+	border: 5px solid black;
+	
+}
+
+
+.aligntable{
+	align-content: center;
+}
+
+
+
+
+
+
+
+@-webkit-keyframes title {
+0%{
+	margin-left: 0px;
+}
+25%{
+	margin-left: 550px;
+}
+50%{
+	margin-left: 1100px;
+}
+75%{
+	margin-left: 550px;
+}
+100%{
+	margin-left: 0px;
+}
+
+}
