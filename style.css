@@ -17,11 +17,17 @@ label{
    
 	text-align: center;
 	-webkit-animation: title 3s  ;
+   
+    
+
 	
 	   
 }
 
-
+.title:hover{
+    transition-duration: 15s;
+    transform: rotate(8640deg)  ;
+}
 .parrafos{
 	text-align: center;
 	display: grid;
@@ -36,8 +42,8 @@ label{
 	align-content: center;
 }
 
-.bgtitle{
-
+.bgtitlet{
+   
   
 }
 
@@ -54,10 +60,15 @@ label{
 .parrafounico{
 
  text-align: center;
+ display: 
 
 }
 .divtitle{
 	text-align: center;
+}
+.respaldo{
+
+
 }
 @-webkit-keyframes title {
 
