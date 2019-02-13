@@ -33,8 +33,12 @@ const agregartitulo = (agregartitulo) => {
 
 
 const agregar = (agregar) => {
+  let largo = entrada.value.length;
 
-   
+  if (largo > 64) {
+    alert("Maximo 64 Caracteres Por Parrafo ");
+  }
+  else{
    parrafos.setAttribute("class","parrafos")
     
     const valor = entrada.value;
@@ -51,6 +55,7 @@ const agregar = (agregar) => {
    entrada.value = "";
        
    i++;
+ }
 }
 
 const cambiodecolor = () => {
@@ -81,8 +86,14 @@ const brcolor = (br) => {
 
 }
 const parrafounico = (unico) => {
+  let largo = entradaunica.value.length;
 
+  if (largo > 64) {
+    alert("Maximo 64 Caracteres Por Parrafo ");
+  }
+  else{
     parrafos.setAttribute("class","parrafounico");
+
  
     const valor = entradaunica.value;
     
@@ -91,11 +102,13 @@ const parrafounico = (unico) => {
     p.appendChild(text);
     let divi = document.createElement("div");
     divi.appendChild(p);
+    divi.setAttribute("id",i);
     parrafos.appendChild(divi);
 
+i++;
+   entradaunica.value = "";
 
-   entrada.value = "";
-
+}
 }
 const sacardiv = () =>{
    

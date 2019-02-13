@@ -16,7 +16,7 @@ label{
 .title{
    
 	text-align: center;
-	-webkit-animation: title 3s  ;
+	-webkit-animation: title 2s  ;
    
     
 
@@ -60,14 +60,15 @@ label{
 .parrafounico{
 
  text-align: center;
- display: 
+  
 
 }
 .divtitle{
 	text-align: center;
 }
 .respaldo{
-
+display: grid;
+grid-template-columns: 1fr;
 
 }
 @-webkit-keyframes title {
@@ -78,16 +79,13 @@ label{
     margin: 0;
 }
 
-33%{
 
-	margin-top: 100px;
-}
-66%{
+50%{
 	
-	margin-bottom:  100px;
+	margin-top:  150px;
 }
 100%{
-	margin-left: 0px;
+	margin: 0px;
 }
 
 }
