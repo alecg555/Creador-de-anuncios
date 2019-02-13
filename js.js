@@ -3,7 +3,6 @@ const parrafos = document.getElementById("parrafos");
 const btn = document.getElementById("btn");
 const entradatitulo = document.getElementById("entrada-titulo"), btntitulo = document.getElementById("btn-titulo"), title = document.getElementById("title");
 const divtitle = document.getElementById("divtitle"), ocultar = document.getElementById("ocultar"), color = document.getElementById("color");
-const dropdown = document.getElementById("dropdown"), btnborde = document.getElementById("btn-borde");
 const bgcolor1 = document.getElementById("bgcolor1"), bgcolor2 = document.getElementById("bgcolor2"),body = document.getElementById("body"),bgcolor3 = document.getElementById("bgcolor3");
 const bordercolor = document.getElementById("bordercolor"),border = document.getElementById("border");
 const entradaunica = document.getElementById("entradaunica"), btnunico =  document.getElementById("btnunico"),btnborrar = document.getElementById("btnborrar");
@@ -11,8 +10,9 @@ const respaldo = document.getElementById("respaldo");
 const backup = divtitle;
   
 
-let i= 0 - 1;
-let cambio = i.toString();
+let i= 0 ;
+let cambio;
+
 
 const borrar = (respaldo) => {
      
@@ -60,11 +60,7 @@ const cambiodecolor = () => {
 
 };
 
-const cambiarborde = (borde) =>{
 
-  parrafos.style.borderColor = dropdown.value;
-
-}
 const cambiodefondo = (fondo) =>{
    
 
@@ -110,8 +106,13 @@ const sacardiv = () =>{
 
 const borrarparrafo = (borrar)=>{
 
-   
+  i--;
+  
+  let cambio = i.toString();
+
+
    document.getElementById(cambio).remove();
+  
 
 }
 
@@ -119,7 +120,7 @@ ocultar.addEventListener("click",borrar);
 btntitulo.addEventListener("click",agregartitulo);
 btn.addEventListener("click",agregar);
 color.addEventListener("change",cambiodecolor);
-btnborde.addEventListener("click",cambiarborde);
+
 bgcolor1.addEventListener("change",cambiodefondo);
 bgcolor2.addEventListener("change",cambiodefondo);
 bgcolor3.addEventListener("change",fondounico);
